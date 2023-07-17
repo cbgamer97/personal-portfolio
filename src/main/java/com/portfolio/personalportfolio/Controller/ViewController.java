@@ -1,6 +1,7 @@
 package com.portfolio.personalportfolio.Controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -12,7 +13,9 @@ public class ViewController {
     }
 
     @GetMapping("/contact")
-    public String contact(){
+    public String contact(Model model){
+        String email = "connor.f.brinkley@gmail.com";
+        model.addAttribute("email", email);
         return "contact";
     }
 

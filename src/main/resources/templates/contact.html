@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="column">
                     <div class="contact-header">
-                        <h2>Contact</h2>
+                        <h1>Contact</h1>
                     </div>
                     <div class="contact-description">
                         <p>Feel free to contact me with any questions or if you would like to collaborate on any projects.</p>
@@ -18,9 +18,13 @@
         </div>
         <div class="container contact-container">
             <div class="row contact-row">
-                <div class="column contact-col">
-
+                <div class="column websites">
+                    <h2>Websites</h2>
+                    <p><a th:href="@{https://www.linkedin.com/in/connorbrinkley/}">Linked In</a></p>
+                    <p><a th:href="@{https://github.com/cbgamer97}">GitHub</a></p>
                 </div>
+                <div class="column email">
+                    <p><a th:href="'mailto:' + ${email}">Email</a></p>
             </div>
         </div>
     </div>
