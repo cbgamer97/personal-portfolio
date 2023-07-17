@@ -4,18 +4,52 @@
 <body>
     <div class="page-wrapper">
         <nav th:replace="partials/nav :: nav"></nav>
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <div class="projects-header">
-                        <h2>Projects</h2>
+        <header class="container proj-header-container">
+            <div class="row proj-header-row">
+                <div class="column proj-header-col justify-center">
+                    <div class="proj-header">
+                        <h1>Projects</h1>
                     </div>
-                    <div class="projects-description">
+                    <div class="proj-description">
                         <p>Here are some of the projects I have worked on. I am constantly working on new projects, so check back often to see what I'm currently working on.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
+        <section class="container proj-card-cont">
+            <div class="row proj-card-row">
+                <div class="column proj-card-col">
+                    <div class="proj-cards column">
+                        <div class="soundconnect">
+                            <h2>SoundConnect</h2>
+                            <p>Working collaboratively with a group of developers utilizing the spotify API to design, plan, build, and deploy a mobile-responsive full-stack social music application. After finalizing a project proposal, we created user stories and developed feature lists, wireframes, storyboards, database diagrams, and a project management board. Through morning stand-ups and afternoon demos, we leveraged an Agile workflow to execute the full development lifecycle through deployment to AWS. Skills: Paired Programming, HTML, CSS,, Java, JavaScript, Spring Boot, Spring Boot Security, API, MySQL.</p>
+                            <a th:href="@{https://soundconnect.space/}">Live Site</a>
+                            <a th:href="@{https://github.com/SoundConnect/sound-connect}">SoundConnect Repository</a>
+                        </div>
+                        <div class="first-game column">
+                            <h2>Java 2D Game</h2>
+                            <p>This project was my first attempt at creating a 2D video game. I utilized only Java code for this game. Currently, it is just a short racing game to unlock all the chests as fast as you can. There are objects that you can pick up that unlock chests and give you boosts, as well as a functioning UI</p>
+                            <a th:href="@{https://github.com/cbgamer97/java-game-project}">Java 2D Game Repository</a>
+                        </div>
+                        <div class="adlister column">
+                            <h2>Card Emporium</h2>
+                            <p>Card Emporium is a full-stack web application that allows users to create an account, login, and post cards for sale. Users can also view cards posted by other users, and search for cards by name or category. This project was built using Java, HTML, CSS, Javascript, and MySQL.</p>
+                            <a th:href="@{https://github.com/card-emporium-proj/card-emporium-proj}">Card Emporium Repository</a>
+                        </div>
+                        <div class="coffee-proj column">
+                            <h2>Café Tacvba</h2>
+                            <p>Café Tacvba was one of the first projects I completed utilizing vanilla JS, HTML, and CSS. We also were required to utilize paired-programming in order to learn to work collaboratively with another programmer. This program allows you to view, and filter a list of coffee menu items, as well as add to the list.</p>
+                            <a th:href="@{https://github.com/ck-coffee-project/coffee-project}">Café Tacvba Repository</a>
+                        </div>
+                        <div class="design-project column">
+                            <h2>CodeUp Design Project</h2>
+                            <p>The first project I completed with paired programming. For this project we were given a Figma design layout, and expected to recreate it exactly as the design layout was structured utilizing HTML and CSS.</p>
+                            <a th:href="@{https://github.com/Codeup-Design-c-c/Codeup-Design-Project}">CodeUp Design Project Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

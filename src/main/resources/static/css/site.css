@@ -233,3 +233,43 @@ header.container {
 .about-body-row p {
     margin: 20px;
 }
+
+/*#########################################################*/
+/*#################### PROJECTS STYLING ###################*/
+/*#########################################################*/
+
+.proj-header-container {
+    margin-top: 7%;
+}
+
+.proj-header-col {
+    align-items: center;
+}
+
+.proj-header {
+    margin-bottom: 20px;
+}
+
+.proj-cards {
+    padding: 30px;
+}
+
+.proj-cards .soundconnect, .first-game, .adlister, .coffee-proj, .design-project {
+    background-color: #ACA885;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.proj-cards .soundconnect p, .first-game p, .adlister p, .coffee-proj p, .design-project p {
+    font-size: 20px;
+}
+
+.proj-cards p {
+    margin-bottom: 10px;
+}
+
+.proj-cards a {
+    font-size: 25px;
+}
+
