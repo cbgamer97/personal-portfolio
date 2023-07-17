@@ -22,16 +22,30 @@
                         <h2>Welcome to my Portfolio</h2>
                     </div>
                     <div class="index-description">
-                        <p>I am a full stack software engineer with a passion for creating beautiful, functional, and user-friendly applications. I have experience working with a wide range of technologies, including</p>
-                        <div class="technologies">
-                            <ul>
-                                <li>Java</li>
-                                <li>Spring Boot</li>
-                                <li>MySQL</li>
-                                <li>JavaScript</li>
-                            </ul>
+                        <div class="first-description">
+                            <p>I am a full stack software engineer with a passion for creating beautiful, functional, and user-friendly applications. I have experience working with a wide range of technologies, including: </p>
                         </div>
-                        <p>I am dedicated to delivering high-quality solutions. I frequently update my <a th:href="/projects">projects</a>, so please feel free to browse and see what I'm currently working on. If you have any questions or if you would like to collaborate on any projects, don't hesitate to <a th:href="/contact">contact me</a>. I am actively seeking a full-time position as a full stack software engineer and excited to explore new opportunities.</p>
+                        <div class="technologies">
+                            <div class="java">
+                                <p>Java</p>
+                                <img class="card-img" src="/images/java.svg" alt="Java">
+                            </div>
+                            <div class="spring">
+                                <p>Spring Boot</p>
+                                <img class="card-img" src="/images/spring-boot.svg" alt="Spring Boot">
+                            </div>
+                            <div class="sql">
+                                <p>MySQL</p>
+                                <img class="card-img" src="/images/mysql2.svg" alt="MySQL">
+                            </div>
+                            <div class="javascript">
+                                <p>JavaScript</p>
+                                <img class="card-img" src="/images/javascript.svg" alt="JavaScript">
+                            </div>
+                        </div>
+                        <div class="second-description">
+                            <p>I am dedicated to delivering high-quality solutions. I frequently update my <a th:href="@{/projects}">projects</a>, so please feel free to browse and see what I'm currently working on. If you have any questions or if you would like to collaborate on any projects, don't hesitate to <a th:href="@{/contact}">contact me</a>. I am actively seeking a full-time position as a full stack software engineer and excited to explore new opportunities.</p>
+                        </div>
                     </div>
                 </div>
             </div>

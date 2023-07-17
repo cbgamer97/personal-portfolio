@@ -64,6 +64,54 @@ header.container {
     margin-top: 30px;
 }
 
+.index-intro {
+    margin-bottom: 20px;
+}
+
 .index-col {
     align-items: center;
 }
+
+.index-description a {
+    color: #E1CA96;
+}
+
+.index-description a:hover {
+    color: #918B76;
+}
+
+.index-header h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index-description p {
+    font-size: 30px;
+}
+
+/*######## TECHNOLOGY CARDS ##########*/
+
+.technologies .java, .spring, .sql, .javascript {
+    max-width: 23%;
+    background-color: #ACA885;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.index-description .technologies p {
+    font-size: 30px;
+}
+
+.index-description .technologies {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img {
+    width: 68%;
+}
+
