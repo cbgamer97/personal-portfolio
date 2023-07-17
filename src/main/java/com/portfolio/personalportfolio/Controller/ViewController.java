@@ -23,4 +23,9 @@ public class ViewController {
     public String projects(){
         return "projects";
     }
+
+    @GetMapping("/about")
+    public String about(){
+        return "about";
+    }
 }

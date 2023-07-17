@@ -212,3 +212,24 @@ header.container {
 .contact-container {
     margin-bottom: 20px;
 }
+
+/*#########################################################*/
+/*##################### ABOUT STYLING #####################*/
+/*#########################################################*/
+
+.about-header {
+    margin-top: 7%;
+    margin-bottom: 20px;
+}
+
+.about-header-col {
+    align-items: center;
+}
+
+.about-body-container {
+    margin-bottom: 40px;
+}
+
+.about-body-row p {
+    margin: 20px;
+}
