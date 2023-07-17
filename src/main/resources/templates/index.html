@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="partials/head :: head(title='Connor Brinkley - Home')"></head>
+<body>
+    <div class="page-wrapper index-page-wrapper">
+        <nav th:replace="partials/nav :: nav"></nav>
+        <header class="container">
+            <div class="row">
+                <div class="column justify-center header-text">
+                    <h1>Connor Brinkley</h1>
+                    <p>Full Stack Software Engineer</p>
+                </div>
+                <div class="column header-image">
+                    <img src="/images/personal-picture.jpg" alt="Connor Brinkley">
+                </div>
+            </div>
+        </header>
+        <div class="container index-intro">
+            <div class="row index-row">
+                <div class="column index-col">
+                    <div class="index-header">
+                        <h2>Welcome to my Portfolio</h2>
+                    </div>
+                    <div class="index-description">
+                        <p>I am a full stack software engineer with a passion for creating beautiful, functional, and user-friendly applications. I have experience working with a wide range of technologies, including</p>
+                        <div class="technologies">
+                            <ul>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <p>I am dedicated to delivering high-quality solutions. I frequently update my <a th:href="/projects">projects</a>, so please feel free to browse and see what I'm currently working on. If you have any questions or if you would like to collaborate on any projects, don't hesitate to <a th:href="/contact">contact me</a>. I am actively seeking a full-time position as a full stack software engineer and excited to explore new opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
