@@ -4,27 +4,41 @@
 <body>
     <div class="page-wrapper">
         <nav th:replace="partials/nav :: nav"></nav>
-        <div class="container">
-            <div class="row">
-                <div class="column">
+        <div class="container contact-header-cont">
+            <div class="row contact-header-row">
+                <div class="column justify-center contact-header-col">
                     <div class="contact-header">
                         <h1>Contact</h1>
                     </div>
                     <div class="contact-description">
-                        <p>Feel free to contact me with any questions or if you would like to collaborate on any projects.</p>
+                        <p>Feel free to follow, contact me with any questions,</p>
+                        <p>or if you would like to collaborate on any projects.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container contact-container">
             <div class="row contact-row">
-                <div class="column websites">
+                <div class="column justify-center websites">
                     <h2>Websites</h2>
-                    <p><a th:href="@{https://www.linkedin.com/in/connorbrinkley/}">Linked In</a></p>
-                    <p><a th:href="@{https://github.com/cbgamer97}">GitHub</a></p>
+                    <div class="website-wrapper">
+                        <div class="linked-in">
+                            <a th:href="@{https://www.linkedin.com/in/connorbrinkley/}">
+                            <p>Linked In</p>
+                            <img alt="linkedin" src="/images/linkedin.svg">
+                            </a>
+                        </div>
+                        <div class="github">
+                            <a th:href="@{https://github.com/cbgamer97}">
+                            <p>GitHub</p>
+                            <img alt="github" src="/images/github.svg">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="column email">
-                    <p><a th:href="'mailto:' + ${email}">Email</a></p>
+                <div class="column justify-center email">
+                    <p>Email: <a th:href="'mailto:' + ${email}">Connor.F.Brinkley@gmail.com</a></p>
+                </div>
             </div>
         </div>
     </div>
