@@ -32,6 +32,14 @@ p, h1, h2, h3, h4, h5, h6, li {
 }
 
 /*#########################################################*/
+/*#################### FOOTER STYLING ######################*/
+/*#########################################################*/
+
+.contact-form {
+    display: flex;
+}
+
+/*#########################################################*/
 /*###################### NAV STYLING ######################*/
 /*#########################################################*/
 
@@ -113,6 +121,11 @@ header.container {
 
 .index-description p {
     font-size: 30px;
+}
+
+.index-header-container {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
 }
 
 /*######## TECHNOLOGY CARDS ##########*/
@@ -273,3 +286,46 @@ header.container {
     font-size: 25px;
 }
 
+/*#############################################*/
+/*############### MEDIA QUERIES ###############*/
+/*#############################################*/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+/*    Nav Bar       */
+
+    .index-page-wrapper nav {
+        margin-bottom: 50px;
+    }
+
+/*    INDEX PAGE    */
+
+    header.container {
+        margin-top: 15%;
+    }
+
+    .index-header-container .row {
+        flex-direction: column;
+    }
+
+    .header-image {
+        align-items: center;
+    }
+
+    .index-description {
+        width: 70%;
+    }
+
+    .technologies .java, .spring, .sql, .javascript {
+        max-width: unset;
+    }
+
+    .javascript img {
+        width: unset;
+        height: unset;
+    }
+
+    .index-description .technologies {
+        flex-direction: column;
+    }
+}

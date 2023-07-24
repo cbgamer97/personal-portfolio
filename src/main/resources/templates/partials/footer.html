@@ -6,27 +6,13 @@
             </div>
             <div class="column footer-col contact-form">
                 <form th:action="@{/contact}" method="post">
-                    <div class="row">
-                        <div class="column">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name..">
-                        </div>
-                        <div class="column">
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="Your email..">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <input type="submit" value="Submit">
-                        </div>
-                    </div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email..">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
