@@ -304,6 +304,10 @@ header.container {
         margin-top: 15%;
     }
 
+    .index-header-container {
+        box-shadow: unset;
+    }
+
     .index-header-container .row {
         flex-direction: column;
     }
@@ -327,5 +331,14 @@ header.container {
 
     .index-description .technologies {
         flex-direction: column;
+    }
+
+    .index-header h2 {
+        font-size: 37px;
+        font-weight: bold;
+    }
+
+    .index-description p {
+        font-size: 27px;
     }
 }
