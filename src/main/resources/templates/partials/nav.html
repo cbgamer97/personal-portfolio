@@ -5,13 +5,17 @@
                 <p>Connor Brinkley</p>
             </div>
         </div>
-        <div class="column justify-center nav-col grow">
-            <ul>
-                <li><a th:href="@{/}">Home</a></li>
-                <li><a th:href="@{/projects}">Projects</a></li>
-                <li><a th:href="@{/about}">About Me</a></li>
-                <li><a th:href="@{/contact}">Contact</a></li>
+        <div id="nav-links" class="column justify-center nav-col grow">
+            <ul class="menu">
+                <li><a class="menu-item" th:href="@{/}">Home</a></li>
+                <li><a class="menu-item" th:href="@{/projects}">Projects</a></li>
+                <li><a class="menu-item" th:href="@{/about}">About Me</a></li>
+                <li><a class="menu-item" th:href="@{/contact}">Contact</a></li>
             </ul>
+            <button class="hamburger">
+                <img class="menuIcon material-icons" src="/images/closed-burger.svg" alt="menu icon"></img>
+                <img class="closeIcon material-icons" src="/images/open-burger.svg" alt="close icon"></img>
+            </button>
         </div>
     </div>
 </nav>
